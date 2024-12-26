@@ -38,7 +38,7 @@ export default function CreateProfilePage() {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const { address } = useAccount();
-  const { data, writeContractAsync, error } = useWriteContract({
+  const { writeContractAsync } = useWriteContract({
     config: config,
   });
   const form = useForm<z.infer<typeof formSchema>>({

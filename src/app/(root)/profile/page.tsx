@@ -116,7 +116,7 @@ export default function ProfilePage() {
       <div className="max-w-4xl mx-auto space-y-8">
         <Card className="w-full overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl">
           <CardHeader className="relative p-0">
-            <div className="h-32 bg-gradient-to-r from-blue-400 to-purple-500"></div>
+            <div className="h-32 bg-gradient-to-r from-pink-200 to-pink-500"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
               <Avatar className="h-24 w-24 ring-4 ring-white">
                 <AvatarImage src={profilePicture} alt="Profile picture" />

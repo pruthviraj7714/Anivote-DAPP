@@ -29,7 +29,7 @@ const CONTRACT_ADDRESS = process.env
 
 export default function AddAnimePage() {
 const { address} = useAccount();
-  const { data, writeContractAsync, error } = useWriteContract({
+  const { writeContractAsync } = useWriteContract({
     config: config,
   });
   const form = useForm<z.infer<typeof formSchema>>({

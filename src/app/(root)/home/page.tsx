@@ -62,7 +62,6 @@ export default function Home() {
         functionName: "getAllPosts",
         account : address
       });
-      console.log(posts);
       setPosts(posts as unknown as PostProps[]);
     } catch (error: any) {
       toast.error(error.message || "Failed to fetch posts.");
@@ -120,7 +119,7 @@ export default function Home() {
 
   return (
     <div className="p-6 bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
-      <div className="grid grid-cols-5 gap-x-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {posts.map((post) => (
           <PostCard
             key={post.id}
